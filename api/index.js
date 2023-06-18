@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === "development") {
 app.use(
   cors({
     credentials: true,
-    origin: "http://127.0.0.1:5173",
+    origin: process.env.BASE_URL,
   })
 );
 app.use(
